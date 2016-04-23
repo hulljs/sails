@@ -80,7 +80,7 @@ module.exports.connections = {
     user: 'YOUR_POSTGRES_USER',
     password: 'YOUR_POSTGRES_PASSWORD',
     database: 'YOUR_POSTGRES_DB'
-  }
+  },
 
 
   /***************************************************************************
@@ -88,5 +88,16 @@ module.exports.connections = {
   * More adapters: https://github.com/balderdashy/sails                      *
   *                                                                          *
   ***************************************************************************/
+   orientdb: {
+    adapter: 'sails-orientdb-binary',
+    host: 'localhost',
+    port: 2424,
+    http_port: 2480,
+    user: 'root',
+    password: 'testdbpwd',
+    db_username: 'admin',
+    db_password: 'admin',
+    database: 'medsdb'
+  }
 
 };
